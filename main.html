@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>
+			1710991231
+		</title>
+		<link rel="stylesheet" href="main.css">
+		<script>
+			var i=0;
+			var arr=['jan.png','feb.png','mar.png','april.png','may.png','june.png','july.png','aug.png','sep.png','oct.png','nov.png','dec.png'];
+			function f1(n)
+			{
+				i+=n;
+				if(i>11){i=0}
+				if(i<0){i=11}
+				document.getElementById("i1").src=arr[i];
+				
+			}
+			//function f2(n1)
+			//{
+			//	window.alert(n1);
+			//	i=n1;
+				//document.getElementById("i1").src=arr[i];
+			//}
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<h1 > 2019  Calender </h1>
+			<!--<div class="list">
+				<select>
+					<option><button type="button" onclick="f2(0)">January</button></option>
+					<option><button type="button" onclick="f2(1)">Febuary</button></option>
+					<option><button type="button" onclick="f2(2)">March</button></option>
+					<option><button type="button" onclick="f2(3)">April</button></option>
+					<option><button type="button" onclick="f2(4)">May</button></option>
+					<option><button type="button" onclick="f2(5)">June</button></option>
+					<option><button type="button" onclick="f2(6)">July</button></option>
+					<option><button type="button" onclick="f2(7)">August</button></option>
+					<option><button type="button" onclick="f2(8)">September</button></option>
+					<option><button type="button" onclick="f2(9)">October</button></option>
+					<option><button type="button" onclick="f2(10)">November</button></option>
+					<option><button type="button" onclick="f2(11)">December</button></option>
+				</select>
+			</div>-->
+			<div class="cal">
+				<div class="left" >
+					<button type="button" onclick="f1(-1)"><img src="F:\projects\calender\left button.png"></button>
+				</div>
+				<div class="image">
+					<img src="F:\projects\calender\jan.png" id="i1">
+				</div>
+				<div class="right">
+					<button type="button" onclick="f1(1)"><img src = "F:\projects\calender\right button.png"></button>
+				</div> 
+			</div>
+		</div>
+			
+	</body>
+	
+</html>
